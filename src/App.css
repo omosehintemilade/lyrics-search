@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.App {
+    height: 100vh;
+    background-color: #fff;
+    font-family: "Arimo", sans-serif;
+}
+
+.btn-submit {
+    border-radius: 30px;
+    color: #fff;
+    background-color: #e056fd;
+    border: transparent;
+    outline: none;
+    padding: 10px 25px;
+}
+
+.header-background {
+    background-color: red;
+    background-image: url(./images/guitarr.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #201d1ab8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 17px;
+    height: 35px;
+}
+
+form input {
+    padding: 5px 10px;
+    flex: 10;
+    border-radius: 10px 0 0 10px;
+    border: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.container {
+    width: 400px;
+    /* background-color: yellow; */
+    margin: auto;
+    margin: 10px 0;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin: 24px 0px;
+    font-size: 25px;
+}
+
+.result {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.list {
+    width: 400px;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.list button {
+    border-radius: 30px;
+    color: #fff;
+    background-color: #e056fd;
+    border: transparent;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.about-song {
+    width: 70%;
+}
+
+.modal {
+    background: white;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.modal h4 {
+    flex: 10;
+}
+
+.modal button {
+    height: 25px;
+    background: transparent;
+    outline: none;
+    border: transparent;
+}
+
+.modal .fa {
+    font-size: 20px;
+}
+
+.modal-overlay {
+    background: #808080d9;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+}
+
+@media(max-width:768px) {
+    body {
+        padding: 10px;
+    }
+    .list {
+        width: 340px;
+        padding: 5px 0;
+    }
+}
